@@ -22,9 +22,6 @@ body {
   font-weight: bold;
   justify-content: right;
   justify-content: center;
-  text-decoration-line: underline;
-  text-decoration-style: wavy;
-  text-decoration-thickness: 5px !important;
   color: black;
 }
 
