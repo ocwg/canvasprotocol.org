@@ -2,8 +2,18 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 3em;
-  background-color: #f4f4f4;
+  background-color: #f0f0f0;
   max-width: 50em;
+}
+
+#header {
+  & h1 {
+    font-weight: 300;
+  }
+  & span {
+    font-weight: 600;
+    color: #4ca2af;
+  }
 }
 
 #link {
@@ -17,18 +27,16 @@ table {
   width: 100%;
   border-collapse: collapse;
   margin: 1em 0;
-}
-
-table th,
-table td {
-  border: 1px solid #ddd;
-  padding: 8px;
-}
-
-table th {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  text-align: left;
-  background-color: #4caf50;
-  color: white;
+  & th,
+  & td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  & th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4ca2af;
+    color: white;
+  }
 }
