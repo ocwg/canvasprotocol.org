@@ -4,6 +4,7 @@ body {
   padding: 3em;
   background-color: #f0f0f0;
   max-width: 50em;
+  margin: 0 auto;
 }
 
 #header {
@@ -20,6 +21,10 @@ body {
   display: flex;
   font-weight: bold;
   justify-content: right;
+  justify-content: center;
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+  text-decoration-thickness: 5px !important;
   color: black;
 }
 
@@ -38,5 +43,12 @@ table {
     text-align: left;
     background-color: #4ca2af;
     color: white;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 1em;
+    max-width: 100%;
   }
 }
