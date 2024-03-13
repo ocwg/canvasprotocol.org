@@ -1,19 +1,26 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, sans-serif;
   margin: 0;
   padding: 3em;
-  background-color: #f0f0f0;
   max-width: 50em;
   margin: 0 auto;
 }
 
 #header {
   & h1 {
-    font-weight: 300;
+    font-weight: 400;
   }
   & span {
     font-weight: 600;
-    color: #4ca2af;
+    color: #4cafac;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: rgb(64, 120, 192);
+  &:hover {
+    text-decoration: underline;
   }
 }
 
@@ -22,7 +29,7 @@ body {
   font-weight: bold;
   justify-content: right;
   justify-content: center;
-  color: black;
+  /* color: black; */
 }
 
 table {
@@ -38,7 +45,7 @@ table {
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: left;
-    background-color: #4ca2af;
+    background-color: #4cafac;
     color: white;
   }
 }
@@ -47,5 +54,8 @@ table {
   body {
     padding: 1em;
     max-width: 100%;
+  }
+  #header h1 {
+    font-size: 2.2em;
   }
 }
