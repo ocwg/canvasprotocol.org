@@ -50,6 +50,43 @@ table {
   }
 }
 
+.embeddable-buttondown-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  background-color: #f2f2f2;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+.embeddable-buttondown-form label {
+  font-size: 1rem;
+  color: #333;
+}
+
+.embeddable-buttondown-form input[type="email"],
+.embeddable-buttondown-form input[type="submit"] {
+  width: 100%;
+  max-width: 280px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.embeddable-buttondown-form input[type="submit"] {
+  background-color: #4cafac;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.embeddable-buttondown-form input[type="submit"]:hover {
+  background-color: #3a8d7c;
+}
+
 @media (max-width: 768px) {
   body {
     padding: 1em;
