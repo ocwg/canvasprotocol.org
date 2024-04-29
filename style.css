@@ -4,6 +4,7 @@ body {
   padding: 3em;
   max-width: 50em;
   margin: 0 auto;
+  line-height: 1.35;
 }
 
 #header {
