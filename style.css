@@ -24,6 +24,12 @@ a {
     text-decoration: underline;
   }
 }
+a.button {
+  background-color: #4cafac;
+  color: white;
+  padding: 0.5em 1em;
+  border-radius: 0.25em;
+}
 
 #link {
   display: flex;
