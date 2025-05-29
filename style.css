@@ -103,3 +103,73 @@ table {
     font-size: 2.2em;
   }
 }
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #121212;
+    color: #e0e0e0;
+  }
+
+  #header {
+    & h1 {
+      color: #e0e0e0;
+    }
+    & span {
+      color: #76d7d3; /* Lighter version of #4cafac */
+    }
+  }
+
+  a {
+    color: #8cb4f3; /* Lighter blue for dark mode */
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  a.button {
+    background-color: #76d7d3;
+    color: #121212; /* Dark text on light button */
+  }
+
+  #link {
+    /* color: #e0e0e0; */ /* Potentially not needed if inheriting body color */
+  }
+
+  table {
+    & th,
+    & td {
+      border: 1px solid #444; /* Darker border */
+    }
+    & th {
+      background-color: #3a8d7c; /* Darker shade of #4cafac */
+      color: #e0e0e0;
+    }
+    & td {
+      color: #e0e0e0; /* Ensure table cell text is light */
+    }
+  }
+
+  .embeddable-buttondown-form {
+    background-color: #2c2c2c; /* Darker form background */
+    border: 1px solid #444;
+  }
+
+  .embeddable-buttondown-form label {
+    color: #e0e0e0;
+  }
+
+  .embeddable-buttondown-form input[type="email"] {
+    background-color: #333;
+    color: #e0e0e0;
+    border: 1px solid #555;
+  }
+
+  .embeddable-buttondown-form input[type="submit"] {
+    background-color: #76d7d3;
+    color: #121212;
+    border: none;
+  }
+
+  .embeddable-buttondown-form input[type="submit"]:hover {
+    background-color: #5dbab5; /* Slightly different hover for dark mode */
+  }
+}
